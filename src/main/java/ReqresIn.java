@@ -15,7 +15,7 @@ public class ReqresIn {
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
-        driver.navigate().to("https://reqres.in/");
+        driver.get("https://reqres.in/");
 
         WebElement searchEndpointSingleUser = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@data-id=\"users-single\"]")));
         searchEndpointSingleUser.click();

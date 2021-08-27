@@ -16,7 +16,7 @@ public class SearchGoogletest {
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
-        driver.navigate().to("https://www.google.com");
+        driver.get("https://www.google.com");
 
         WebElement searchBox = driver.findElement(By.name("q"));
         searchBox.clear();
