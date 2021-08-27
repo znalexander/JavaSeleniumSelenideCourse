@@ -24,7 +24,7 @@ public class SearchGoogletest {
         searchBox.submit();
         WebElement searchPage = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@aria-label=\"Page 3\"]")));
         searchPage.click();
-        WebElement targetUrl = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//cite[@class=\"iUh30 Zu0yb qLRx3b tjvcx\"])[17]")));
+        WebElement targetUrl = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//cite[@class=\"iUh30 Zu0yb qLRx3b tjvcx\"])[15]")));
         String textTargetUrl = targetUrl.getAttribute("textContent");
 
         System.out.println("textTargetUrl->" + textTargetUrl);
